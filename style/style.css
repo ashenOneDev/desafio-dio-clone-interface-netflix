@@ -1,0 +1,156 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: rgb(241, 209, 28);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*manga principal*/
+.manga-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('../img/capa-jujutsu.webp');
+    height: 480px;
+    
+
+    background-size: cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.manga-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.autor{
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.btn-row{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao {
+    margin-right: 8px;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.manga-principal .container {
+    width: 70%;
+}
+
+.box-manga{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-manga {
+    margin-top: 5px;
+}
+
+.lista {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.item span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 15pt;
+    padding-left: 20px;
+}
+
+.item:hover {
+    -webkit-transform: scaleX(1.08);
+    border: solid rgb(241, 209, 28) 2px;
+    
+}
+
+.item:hover span {
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    color: rgb(241, 209, 28);
+    padding: 15px;
+}
